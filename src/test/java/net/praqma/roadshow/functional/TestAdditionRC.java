@@ -29,7 +29,7 @@ public class TestAdditionRC {
 	@Test
 	public void testAddition() throws Exception {
 		selenium.open(DEPLOY_PATH + "/Calculator");
-		selenium.type("name=value", "2");
+		selenium.type("name=value","2");
 		selenium.click("name=plus");
 		selenium.waitForPageToLoad("30000");
 		selenium.type("name=value", "3");
